@@ -1,6 +1,6 @@
 {
   "name": "@saeris/proxy-tokens",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Design Token utilities for generating CSS Variables",
   "author": "Drake Costa <drake@saeris.io> (https://github.com/Saeris/)",
   "license": "MIT",
