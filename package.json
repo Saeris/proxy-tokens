@@ -1,0 +1,90 @@
+{
+  "name": "@saeris/proxy-tokens",
+  "version": "0.0.1",
+  "description": "Design Token utilities for generating CSS Variables",
+  "author": "Drake Costa <drake@saeris.io> (https://github.com/Saeris/)",
+  "license": "MIT",
+  "keywords": [
+    "design-tokens",
+    "css",
+    "css-variables",
+    "css-in-js",
+    "styled-components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saeris/proxy-tokens.git"
+  },
+  "homepage": "https://github.com/saeris/proxy-tokens#readme",
+  "bugs": {
+    "url": "https://github.com/saeris/proxy-tokens/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src/*",
+    "!src/__tests__/**/*"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./src/index.ts"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "ci": "yarn install --ignore-scripts --frozen-lockfile --silent --non-interactive",
+    "build:docs": "fiddly",
+    "lint": "yarn test:lint",
+    "format": "yarn test:lint --fix",
+    "prepare": "is-ci || husky install",
+    "release": "np",
+    "test": "yarn test:lint && yarn test:typecheck && yarn test:unit",
+    "test:lint": "eslint \"./src/**/*.{j,t}s?(x)\"",
+    "test:typecheck": "tsc --noEmit",
+    "test:unit": "jest",
+    "test:watch": "yarn test:unit --watch",
+    "typecheck": "yarn test:typecheck",
+    "version": "yarn build:docs"
+  },
+  "peerDependencies": {
+    "react": ">= 17",
+    "styled-components": ">= 5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@fontsource/noto-sans": "^4.5.5",
+    "@saeris/eslint-config": "^2.0.2",
+    "@types/babel__core": "^7.1.18",
+    "@types/eslint": "^8.4.1",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.40",
+    "@types/styled-components": "5.1.24",
+    "commitlint": "^16.2.3",
+    "enhanced-resolve": "^5.9.2",
+    "eslint": "7.x.x",
+    "husky": "^7.0.4",
+    "is-ci": "^3.0.1",
+    "jest": "^27.4.5",
+    "lint-staged": "^12.3.7",
+    "np": "^7.6.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
+    "styled-components": "^5.3.3",
+    "typescript": "^4.5.4"
+  },
+  "np": {
+    "branch": "main",
+    "2fa": false
+  }
+}

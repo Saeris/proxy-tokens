@@ -1,0 +1,9 @@
+{
+  "name": "🎊 Proxy Tokens",
+  "description": "Design Token utilities for generating CSS Variables",
+  "noHeader": true,
+  "homepage:": "http://saeris.io",
+  "repo": "https://github.com/saeris/proxy-config",
+  "favicon": "static/favicon.ico",
+  "styles": "styles/styles.css"
+}

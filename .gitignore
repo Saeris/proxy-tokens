@@ -1,0 +1,16 @@
+# package directories
+node_modules
+
+# Directories
+/.husky/_
+/coverage
+
+# Files
+.DS_STORE
+npm-debug.log*
+yarn-error.log*
+.env
+*.tsbuildinfo
+
+coverage.lcov
+engine.json
