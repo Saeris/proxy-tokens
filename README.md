@@ -27,7 +27,7 @@ Behind the scenes, these values will be transformed into CSS variable references
 > theme.ts
 
 ```typescript
-import { css } from "styled-components
+import { css } from "styled-components";
 import { createProxyTheme, tracking } from "@saeris/proxy-tokens";
 
 export const theme = createProxyTheme(
