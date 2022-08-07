@@ -37,7 +37,6 @@
   },
   "sideEffects": false,
   "scripts": {
-    "ci": "yarn install --ignore-scripts --frozen-lockfile --silent --non-interactive",
     "dev": "next dev",
     "build:docs": "fiddly",
     "lint": "yarn test:lint",
