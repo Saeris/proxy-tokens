@@ -9,5 +9,3 @@ export const breakpoints = {
   // eslint-disable-next-line @typescript-eslint/no-loss-of-precision
   desktopLarge: { min: 1921, max: 999e308 }
 } as const;
-
-export type Breakpoints = typeof breakpoints;

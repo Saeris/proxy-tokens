@@ -6,8 +6,6 @@ export const fonts = {
   body: [`Noto Sans`, `-apple-system`, `Helvetica`, `Arial`, `sans-serif`]
 } as const;
 
-export type Fonts = typeof fonts;
-
 export const sizes = {
   9: `0.9rem`,
   10: `1rem`,
@@ -21,8 +19,6 @@ export const sizes = {
   48: `4.8rem`
 } as const;
 
-export type FontSizes = typeof sizes;
-
 export const weights = {
   thin: 100,
   extralight: 200,
@@ -33,8 +29,6 @@ export const weights = {
   bold: 700,
   extrabold: 800
 } as const;
-
-export type FontWeights = typeof weights;
 
 export const styles = {
   label: css(
@@ -56,5 +50,3 @@ export const styles = {
     `
   )
 } as const;
-
-export type Styles = typeof styles;

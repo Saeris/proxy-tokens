@@ -29,5 +29,3 @@ export const corners = {
   24: `2.4rem`,
   32: `3.2rem`
 } as const;
-
-export type Corners = typeof corners;

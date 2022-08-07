@@ -5,5 +5,6 @@ export { isGradientTokenMap } from "./isGradientTokenMap";
 export { isNested } from "./isNested";
 export { isObject } from "./isObject";
 export { isRawTokens } from "./isRawTokens";
-export { media, Media, Range } from "./media";
+export { media } from "./media";
+export type { Media, Range } from "./media";
 export { tracking } from "./tracking";

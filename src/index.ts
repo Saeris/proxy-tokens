@@ -1,4 +1,6 @@
-export { GradientToken, GradientTokenMap, ColorNames } from "./createLinearGradient";
+export { GradientToken } from "./createLinearGradient";
+export type { GradientTokenMap, ColorNames } from "./createLinearGradient";
 export { createProxyTheme } from "./createTokenMap";
-export { MappedTokens } from "./types";
-export { tracking, media, Media } from "./utils";
+export type { MappedTokens } from "./types";
+export { tracking, media } from "./utils";
+export type { Media } from "./utils";

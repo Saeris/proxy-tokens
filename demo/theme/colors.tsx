@@ -88,6 +88,7 @@ export const colors = {
 } as const;
 
 export type Colors = typeof colors;
+
 const darkGradients = (color: keyof Colors): GradientTokenMap<Colors> => ({
   hover: new GradientToken(color, 500, 700),
   default: new GradientToken(color, 600, 800),
@@ -116,5 +117,3 @@ export const gradients = {
     Info: verticalGradients(`Info`)
   }
 };
-
-export type Gradients = typeof gradients;

@@ -38,6 +38,7 @@
   "sideEffects": false,
   "scripts": {
     "ci": "yarn install --ignore-scripts --frozen-lockfile --silent --non-interactive",
+    "dev": "next dev",
     "build:docs": "fiddly",
     "lint": "yarn test:lint",
     "format": "yarn test:lint --fix",
@@ -74,6 +75,7 @@
     "is-ci": "^3.0.1",
     "jest": "^27.4.5",
     "lint-staged": "^12.3.7",
+    "next": "^12.2.4",
     "np": "^7.6.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.6.0",
@@ -83,8 +85,27 @@
     "styled-components": "^5.3.3",
     "typescript": "^4.5.4"
   },
+  "babel": {
+    "sourceMaps": "inline",
+    "presets": [
+      "next/babel",
+      "@babel/preset-typescript",
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": true
+          },
+          "modules": "commonjs",
+          "useBuiltIns": "usage",
+          "corejs": 3
+        }
+      ]
+    ]
+  },
   "np": {
     "branch": "main",
     "2fa": false
-  }
+  },
+  "packageManager": "yarn@3.2.1"
 }

@@ -1,4 +1,5 @@
-import type React from "react";
+import React from "react";
+import { useTheme } from "styled-components";
 import type { DesignTokenMapProperties } from "./createDesignTokens";
 
 export type ColorNames<T extends object> = Exclude<keyof T, "toJSON">;
@@ -39,9 +40,8 @@ export class GradientToken<T extends Record<string, unknown>> {
         theme.colors[this.#color][this.#end]
       } 100%)`;
 
-  /*
   SVG: React.VFC = () => {
-    const theme = useTheme();
+    const theme = useTheme() as any;
     return (
       <linearGradient id={this.#prefix} gradientTransform={`rotate(${this.#direction})`}>
         <stop stopColor={theme.colors[this.#color][this.#start]} offset="0%" />
@@ -49,7 +49,6 @@ export class GradientToken<T extends Record<string, unknown>> {
       </linearGradient>
     );
   };
-  */
 
   get toJSON(): () => ReturnType<GradientToken<T>["css"]> {
     return () => this.css();

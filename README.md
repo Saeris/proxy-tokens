@@ -119,7 +119,7 @@ const Global = createGlobalStyle(
 export const App = () => (
   <ThemeProvider theme={theme}>
     <Global />
-    [/* the rest of your app */]
+    {/* the rest of your app */}
   </ThemeProvider>
 );
 ```

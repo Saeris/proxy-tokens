@@ -1,6 +1,14 @@
 {
-  "include": ["./src/**/*", "./demo/**/*"],
-  "exclude": ["node_modules", "**/__mocks__/**/*", "**/__tests__/*.*", "**/*.d.ts"],
+  "include": [
+    "./src/**/*",
+    "./pages/**/*",
+    "./demo/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/__mocks__/**/*",
+    "**/__tests__/*.*"
+  ],
   "ts-node": {
     "transpileOnly": true
   },
@@ -9,7 +17,6 @@
     "composite": true,
     "declarationMap": true,
     "sourceMap": true,
-
     /* Basic Options */
     "target": "ES2017",
     "module": "commonjs",
@@ -19,11 +26,9 @@
     ],
     "allowJs": true,
     "noEmit": true,
-
     /* JSX support */
     "jsx": "preserve",
     "declaration": true,
-
     /* Strict Type-Checking Options */
     "strict": false,
     "strictNullChecks": true,
@@ -31,14 +36,14 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     // "strictFunctionTypes": true,
-
     /* Module Resolution Options */
     "moduleResolution": "node",
     "esModuleInterop": true,
     "resolveJsonModule": true,
-
     /* Advanced Options */
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "incremental": true,
+    "isolatedModules": true
   }
 }

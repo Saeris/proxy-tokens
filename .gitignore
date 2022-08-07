@@ -1,9 +1,20 @@
 # package directories
 node_modules
 
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
 # Directories
+.next/
+dist/
 /.husky/_
-/coverage
+.coverage
 
 # Files
 .DS_STORE

@@ -1,8 +1,6 @@
 // @ts-check
 import { CSSProp } from "styled-components"; // eslint-disable-line
-import type { theme } from "./theme";
-
-type Theme = typeof theme;
+import type { Theme } from "./theme";
 
 declare module "styled-components" {
   export interface DefaultTheme extends Theme {} // eslint-disable-line
