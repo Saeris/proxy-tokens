@@ -11,8 +11,6 @@ export const Container = styled.main`
   height: 100%;
 `;
 
-const Home: NextPage = () => {
-  return <Container>{`Proxy Tokens Demo`}</Container>;
-};
+const Home: NextPage = () => <Container>{`Proxy Tokens Demo`}</Container>;
 
 export default Home;

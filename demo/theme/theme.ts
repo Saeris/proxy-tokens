@@ -1,4 +1,5 @@
-import { createProxyTheme, tracking, media, MappedTokens } from "../../src";
+import type { MappedTokens } from "../../src";
+import { createProxyTheme, tracking, media } from "../../src";
 import { breakpoints } from "./breakpoints";
 import { gradients, colors } from "./colors";
 import { spacing, corners } from "./spacing";

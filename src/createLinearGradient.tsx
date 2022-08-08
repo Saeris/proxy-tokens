@@ -36,9 +36,9 @@ export class GradientToken<T extends Record<string, unknown>> {
   css =
     (): ((props: { theme: any }) => string) =>
     ({ theme }) =>
-      `linear-gradient(${this.#direction}deg, ${theme.colors[this.#color][this.#start]} 0%, ${
+      `linear-gradient(${this.#direction}deg, ${String(theme.colors[this.#color][this.#start])} 0%, ${String(
         theme.colors[this.#color][this.#end]
-      } 100%)`;
+      )} 100%)`;
 
   SVG: React.VFC = () => {
     const theme = useTheme() as any;
